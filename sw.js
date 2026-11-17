@@ -1,6 +1,4 @@
-from pathlib import Path
-
-content = """const CACHE = 'hamkke-moim-v3-refresh';
+const CACHE = 'hamkke-moim-v4-landscape-tapassign';
 const FILES = [
   './',
   './index.html',
@@ -65,8 +63,3 @@ self.addEventListener('fetch', event => {
     }
   })());
 });
-"""
-
-path = Path("/mnt/data/sw.js")
-path.write_text(content, encoding="utf-8")
-print(f"생성 완료: {path} ({path.stat().st_size} bytes)")
